@@ -94,7 +94,12 @@ console.log(empTwo);
 */
 
 //CODE HERE
-
+// class Manager extends Employee { //Wasn't able to get this to work.
+//     constructor(employees) {
+//         super(name, shifts);
+//         this.employees = employees;
+//     }
+// }
 
 
 /*
