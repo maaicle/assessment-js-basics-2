@@ -34,8 +34,8 @@ const cart = [
 ]
 
 //CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.map(object => object.price).reduce((acc, curr) => acc + curr);
+// console.log(summedPrice);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,7 +54,11 @@ const cart = [
 */
 
 //CODE HERE
+let calcFinalPrice = (cartTotal, couponValue, tax) => {
+    return (cartTotal - couponValue) * (1 + tax);
+}
 
+// console.log(calcFinalPrice(10,9,.05));
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +83,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+- Name (String): Needed to know who is ordering the product.
+- Address (String): Need to know where the products are going.
+- email (String): Will send a confirmation email.
+- Returning customer (Boolean): Used for company analytics to determine value of customer retention.
+- Order quantity (Number): Will be used to add a coupon if this is a specific order (e.g. 10th order gets a discount)
 */
 
 /*
@@ -88,3 +96,12 @@ const cart = [
 */
 
 //CODE HERE
+let customer = {
+    name: 'Joe John',
+    Address: '123 Fake St, Springfield, IL 84044',
+    email: 'joejohn@email.com',
+    returningCustomer: true,
+    orderQuantity: 5
+};
+
+console.log(customer);
