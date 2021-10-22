@@ -53,13 +53,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 const canWeDeliver = zipCode => {
     if(deliveryAreaZipCodes.includes(zipCode)) {
-        console.log(`You're in our delivery zone!`);
+        // console.log(`You're in our delivery zone!`);
+        return `You're in our delivery zone!`
     } else {
-        console.log(`Sorry, we can't deliver to that address`)
+        // console.log(`Sorry, we can't deliver to that address`)
+        return `Sorry, we can't deliver to that address`
     };
 };
 
-// canWeDeliver(85205);
+// console.log(canWeDeliver(85205));
 
 /* 
     Problem 2 Continued
@@ -87,13 +89,15 @@ const canWeDeliverTwo = zipCode => {
         };   
     };
     if (canDeliver === true) {
-        console.log(`You're in our delivery zone!`);
+        // console.log(`You're in our delivery zone!`);
+        return `You're in our delivery zone!`
     } else {
-        console.log(`Sorry, we can't deliver to that address`)
+        // console.log(`Sorry, we can't deliver to that address`)
+        return `Sorry, we can't deliver to that address`
     };
 };
 
-// canWeDeliverTwo(85204);
+// console.log(canWeDeliverTwo(85204));
 
 //////////////////PROBLEM 3////////////////////
 /* 
